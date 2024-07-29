@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playwrite+AR:wght@100..400&display=swap");
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: rgb(46,47,58); 
+  background: linear-gradient(90deg, rgba(46,47,58,1) 0%, rgba(93,93,93,1) 50%, rgba(182,182,182,1) 100%); 
+}
+nav {
+  width: 100%;
+  height: 10%;
+  box-shadow: 0px 7px 15px 12px rgba(0,0,0,0.8);
+-webkit-box-shadow: 0px 7px 15px 12px rgba(0,0,0,0.8);
+-moz-box-shadow: 0px 7px 15px 12px rgba(0,0,0,0.8);
+}
+ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  justify-content: space-evenly;
+  background-color: rgb(138, 138, 138);
+  width: 100%;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;  
+  font-style: normal;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+li {
+  font-size: larger;
+  cursor: pointer;
+  padding: 20px;
+  height: 100%;
+  transition: background-color 0.2s ease-in-out;
+}
+li:hover {
+  background-color: rgb(105, 105, 105);
+}
+.picandnav{
+  display: flex;
+  flex-direction: column;
+}
+.aesthetic{
+  height: 300px;
+  width: 500px;
+  display: flex;
+  align-self: center;
+  box-shadow: 0px 7px 15px 12px rgba(0,0,0,0.8);
+  -webkit-box-shadow: 0px 7px 15px 12px rgba(0,0,0,0.8);
+  -moz-box-shadow: 0px 7px 15px 12px rgba(0,0,0,0.8);
+  border-radius: 5px;
+}
+.card {
+  width: fit-content;
+  height: fit-content;
+  background-color: rgb(138, 138, 138);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 25px;
+  gap: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+}
+.socialContainer {
+  width: 52px;
+  height: 52px;
+  background-color: rgb(44, 44, 44);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: .3s;
+}
+.containerOne:hover {
+  background-color: #d62976;
+  transition-duration: .3s;
+}
+.containerTwo:hover {
+  background-color: #00acee;
+  transition-duration: .3s;
+}
+.containerThree:hover {
+  background-color: #0072b1;
+  transition-duration: .3s;
+}
+.containerFour:hover {
+  background-color: #128C7E;
+  transition-duration: .3s;
+}
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: .3s;
+}
+
+.socialSvg {
+  width: 17px;
+}
+
+.socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+div{
+  display: flex;
+  color: rgb(63, 63, 63);
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-size: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+.contact{
+  color: rgb(37, 37, 37);
+  text-decoration: none;
+  background-color: rgb(138, 138, 138);
+  padding-left: 90px;
+  padding-right: 10px;
+}
+.twelve h1 {
+  cursor:cell;
+  color: rgb(37, 37, 37);
+  font-size:26px; font-weight:700;  letter-spacing:1px; text-transform:uppercase; width:160px; text-align:center; margin:auto; white-space:nowrap; padding-bottom:13px;
+}
+.twelve h1:before {
+    background-color: #ffffff;
+    content: '';
+    display: block;
+    height: 3px;
+    width: 75px;
+    margin-bottom: 5px;
+}
+.twelve h1:after {
+    background-color: #ffffff;
+    content: '';
+    display: block;
+    margin-top: 6px;
+    margin-left: 150px;
+    height: 3px;
+    width: 75px;
+    margin-bottom: 5px;
+}
